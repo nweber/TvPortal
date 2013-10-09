@@ -1,0 +1,33 @@
+$default_padding: 25px;
+$default_background: #eee;
+
+$show_padding: 10px;
+
+body {
+    background-color: $default_background;
+
+    padding: {
+        top: $default_padding;
+        bottom: $default_padding;
+        left: $default_padding;
+        right: $default_padding;
+    }
+}
+
+.show-box {
+	height: 150px;
+	width: 250px;
+	
+	padding: {
+        top: $show_padding;
+        bottom: $show_padding;
+        left: $show_padding;
+        right: $show_padding;
+    }
+
+	div {
+		width: 100%;
+		height: 100%;
+		background-color: #00ff00;
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="TvPortal">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+</head>
+    <body ng-controller="TvPortalController">
+        <div id="show-container" class="container">
+            <div
+                ng-repeat="item in shows"
+                class="show-box">
+
+                <div>
+                    {{item.name}}
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <!-- build:js scripts/libs.js -->
+        <script src="libs/xml2json/xml2json.js"></script>
+        <script src="libs/jquery/jquery.js"></script>
+        <script src="libs/js-signals/dist/signals.js"></script>
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular-resource/angular-resource.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/TvPortalController.js"></script>
+        <script src="scripts/services/ShowsService.js"></script>
+        <script src="scripts/services/MirrorsService.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
